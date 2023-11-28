@@ -1,10 +1,138 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>My Profile | 自己紹介&HP作成中</title>
-  </head>
-  <body>
-    <p>これはサンプルです</p>
-  </body>
+<head>
+<meta charset="UTF-8">
+<title>My Profile | 自己紹介&HP作成中</title>
+<link rel="stylesheet" media="all" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+
+<nav id="mainnav">
+	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+	<div class="panel">
+		<ul>
+			<li><a href="#header">タイトル</a></li>
+			<li><a href="#sec01">概要</a></li>
+			<li><a href="#sec02">研究分野</a></li>
+			<li><a href="#sec03">研究紹介</a></li>
+			<li><a href="#sec04">資格一覧</a></li>
+			<li><a href="#sec05">プロフィール</a></li>
+		</ul>
+	</div>
+</nav>
+
+<header id="header">
+	<img src="images/header.jpg" alt="">
+	<div id="slogan">
+		<h1>My Profile</h1>
+		<h2>～見やすく分かりやすいを目指して～</h2>
+	</div>
+</header>
+
+<!-- 概要 -->
+<section id="sec01">
+	<header>
+		<h2>概要</h2>
+	</header>
+	<div class="vision">
+		このサイトは私自身の紹介ページとなっています．自身のスキルアップを目的とし，Azureのクラウドを利用してWebページを公開しています．HTML・JavaScript・CSSに関しては勉強中ですので悪しからず．プロフィールに関しましては右上のタブから飛べるようになっています．（2023/11/27開設）
+	</div>
+</section>
+<!-- // 概要 -->
+
+<!-- 研究分野 -->
+<section id="sec02">
+	<div class="wrap">
+		<p class="bg"><img src="images/sec02_01.jpg" alt=""></p>
+		<div class="txt">
+			<div class="vMid">
+				<h2>要求工学</h2>
+				<p>要求工学は，情報システムやコンピュータを組み込んだ製品への顧客要求の獲得，分析，仕様化，検証の一連の技術体系のことをいいます．近年では，要求獲得を行うためにデザイン思考を用いたアジャイル開発と呼ばれる手法が話題になっています．</p>
+			</div>
+		</div>
+	</div>
+	<div id="sec02_02" class="wrap">
+		<p class="bg"><img src="images/sec02_02.jpg" alt=""></p>
+		<div class="txt">
+			<div class="vMid">
+				<h2>デザイン思考</h2>
+				<p>デザイン思考は，創造的な問題解決の為の方法論として，様々な場面で活用されています．デザイン思考による問題解決のプロセスは，共感，問題定義，創造，プロトタイプ，テストの5つのステップにより構成され，実際の問題解決はこれらの要素の反復によって実践されます．</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- // 研究分野 -->
+
+<!-- 研究紹介 -->
+<section id="sec03">
+	<div class="inner">
+		<ul class="col3">
+			<li>
+				<h2>先行研究</h2>
+				<img src="images/sec03_01.jpg" alt="">
+				<p>Microsoft社から提供されているMicrosoft Azure Faceを利用し，感情の推定を行っています．表情から感情を推定し，その結果をCJMと統合することで拡張CJMを作成しました．また，拡張CJMを利用してより詳細な要求獲得を行いました．</p>
+			</li>
+			<li>
+				<h2>Customer Journey Map</h2>
+				<img src="images/sec03_02.jpg" alt=""">
+				<p>ソフトウェア開発を行う際に，開発者が顧客の求めるシステムとその機能を洗い出すために作成する図のことをいいます．顧客が商品やサービスを利用・購入するまでのプロセスを時系列で表した図になります．</p>
+			</li>
+			<li>
+				<h2>研究紹介</h2>
+				<img src="images/sec03_03.jpg" alt="">
+				<p>生体情報を活用し，表情では合意していても本心では違和感を持つといった表情から読み取ることのできない感情を特定し，CJMに反映させます．鼻部皮膚温度・脳波・眼電位を用いることで生理指標・心理指標・行動指標の3点から感情の特定を行っています．</p>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // 研究紹介 -->
+
+<!-- 資格一覧 --> 
+<section id="sec04">
+	<div class="inner">
+		<ul class="col3">
+			<li>
+				<h2>取得済み資格一覧</h2>
+				<p style="text-align:center">・ITパスポート<br>・情報セキュリティマネジメント<br>・基本情報技術者<br>・情報セキュリティ内部監査人<br>・G検定<br>・Microsoft Certified Azure Fundamentals<br>・Python3 エンジニア認定基礎<br>・Python3 エンジニア認定データ分析</p>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // 資格一覧 -->
+
+<!-- プロフィール -->
+<section id="sec05">
+	<header>
+		<h2>PROFILE</h2>
+	</header>
+	<div class="inner">
+		<ul class="col2">
+			<li>
+				<dl>
+					<dt>氏名</dt>
+					<dd>北澤玲央</dd>
+					<dt>所属</dt>
+					<dd>工学院大学大学院<br>工学研究科　情報学専攻</dd>
+					<dt>研究室</dt>
+					<dd>高信頼ソフトウェア開発工学研究室</dd>
+					<dt>アルバイト経歴</dt>
+					<dd><p>スーパー，飲食店</p>PC講座，TopSE</dd>
+					<dt>趣味</dt>
+					<dd><p>写真撮影，資格取り</p><p>スマホゲーム</p></dd>
+					<dt>連絡先</dt>
+					<dd>em23020@g.kogakuin.jp</dd>
+					
+				</dl>
+			</li>
+			<li>
+				<img src="images/sec05_01.png" width="288" height="288" alt="">
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // プロフィール -->
+</body>
 </html>
